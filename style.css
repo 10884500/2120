@@ -1,3 +1,130 @@
-p {
-    color: burlywood;
+html {
+    background-color: #F0F0EE;
+    font-family: 'Montserrat', sans-serif;
 }
+
+#wrap {
+    max-width: 900px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1rem ;
+    border-radius: .7rem;
+    box-shadow: 2px 2px 4px #bbbbbb;
+    height: auto;
+    /* box-shadow: 2px 2px 4px #bbbbbb inset; */
+  }
+
+  main {
+    padding: 0.5rem 2%;
+    display: block;
+    margin: 0;
+  }
+
+  header {
+    text-align: left;
+    background-image: url(images/tree-head.svg);
+    background-repeat: no-repeat;
+    background-position: 75% 25%;
+    background-size: 50px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 28px;
+    height: 5rem;
+  }
+
+  /*  Nav for desktop  */
+  @media only screen and (min-width: 801px) {
+    nav {
+      margin-left: 25%;
+      align-items: center;
+      font-family: 'Montserrat', bold;
+    }
+    nav li:hover {
+        background-color: #699CC3;
+        color: #2CD872;
+    }
+    .active {
+      float: left;
+      padding: 20px 20px 0px 15px;
+      list-style: none;
+      background-color: white;
+      padding-top: 3px;
+      border: solid #2C7272 1px;
+    }
+    .noa {
+      float: left;
+      padding: 20px 20px 0px 15px;
+      list-style: none;
+      background-color: #9DC0D6;
+      padding-top: 3px;
+      border: solid #2C7272 1px;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:link {
+      color: #2C7272;
+    }
+    a:visited {
+      color: #2C7272;
+    }
+    a:active {
+      color: #699CC3;
+    }
+    nav {
+      text-align: center;
+      padding-bottom: 10px;
+      display: block;
+      margin-left: 0;
+    }
+  }
+
+  /* phone */
+@media only screen and (max-width: 800px) {
+    nav {
+     align-items: center;
+     font-family: 'Montserrat', bold;
+    }
+    ul.navbar {
+      background-color: #F0F0EE;
+      list-style: none;
+      padding: .5rem 2%;
+      border-radius: 1rem;
+      text-align: center;
+    }
+    ul.navbar li {
+        padding: .1rem;
+        margin: .1rem;
+    }
+    ul.navbar li a {
+      border: solid 1px #cf3233;
+      display: block;
+      padding: .5rem 2%;
+      border-radius: .7rem;
+      margin: .5rem;
+      color: #f7f3f8;
+      text-decoration: none;
+    }
+    li.active {
+      font-size: 2rem;
+      background-color: #23261D;
+      border-radius: 25px;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:link {
+      color: #cf3233;
+    }
+    a:visited {
+      color: #cf3233;
+    }
+    nav li:hover {
+        background-color: #699CC3;
+        color: #2CD872;
+        border-radius: 25px;
+    }
+    a:active {
+      color: #699CC3;
+    }
+  }
