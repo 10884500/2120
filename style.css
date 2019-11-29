@@ -114,10 +114,10 @@ html {
       text-decoration: none;
     }
     a:link {
-      color: #cf3233;
+      color: #9DC0D6;
     }
     a:visited {
-      color: #cf3233;
+      color: #9DC0D6;
     }
     nav li:hover {
         background-color: #699CC3;
@@ -128,3 +128,17 @@ html {
       color: #699CC3;
     }
   }
+
+  /* Footer */
+footer {
+    border-radius: 10px;
+    background-color: #2C7272;
+}
+
+#foot-cont {
+    margin: .75rem;
+}
+
+#totop {
+    
+}
