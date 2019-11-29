@@ -200,6 +200,9 @@ figure {
     width: 50%;
     height: auto;
 }
+fieldset {
+    margin-top: 1rem;
+}
 
 
 /* Footer */

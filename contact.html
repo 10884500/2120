@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Welcome</title>
+    <title>Contact</title>
   </head>
   <div id="wrap">
     <body>
@@ -30,8 +30,75 @@
 
       <main>
         <div id="contact">
-          <form>
-            
+          <form
+            action="/thanks.html"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <fieldset>
+              <legend>Personal Information:</legend>
+              <label>
+                <span>Full Name: </span> <br />
+                <input
+                  name="address"
+                  type="text"
+                  placeholder=""
+                  required
+                  class="inputs"
+                /><br />
+                <br />
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Shopping Information:</legend>
+              <label>
+                <span>Email: </span> <br />
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="trevor@iamtrevorthompson.com"
+                  required
+                  class="inputs"
+                />
+                <br />
+                <br />
+              </label>
+              <label>
+                <span>Phone Number: </span> <br />
+                <input
+                  name="phone"
+                  type="tel"
+                  placeholder="(xxx)xxx-xxxx"
+                  pattern="[0-9-. ]{10,14}"
+                  class="inputs"
+                />
+              </label>
+              <br />
+              <br />
+              <label>
+                <span>Card Number: </span> <br />
+                <input
+                  name="card number"
+                  type="password"
+                  placeholder=""
+                  required
+                  class="inputs"
+                />
+                <br />
+                <br />
+              </label>
+              <label>
+                <span>CVV</span> <br />
+                <input
+                  name="CVV"
+                  type="password"
+                  placeholder="xxx"
+                  required
+                  class="inputs"
+                />
+              </label>
+            </fieldset>
+            <br />
             <fieldset>
               <legend>Which package would you like to order?</legend>
               <select name="which" class="inputs">
@@ -41,6 +108,40 @@
               </select>
             </fieldset>
 
+            <fieldset>
+              <legend>Answer a quick question for us?</legend>
+              <span>Location you would want added to our site next?</span>
+              <br />
+              <input name="location" type="radio" value="tacoma" />
+              Tacoma
+              <br />
+              <input name="location" type="radio" value="seattle" />
+              Seattle
+              <br />
+              <input name="location" type="radio" value="locks" />
+              Cascade Locks
+            </fieldset>
+
+            <fieldset>
+              <legend>Comments or customize packages</legend>
+              <label>
+                <textarea
+                  class="inputs"
+                  name="special"
+                  style="margin: 0%; height: 50px; width: 70%;"
+                  placeholder="Make sure to leave contact information so we can contact you!"
+                ></textarea>
+              </label>
+            </fieldset>
+
+            <input
+              name="submit"
+              type="submit"
+              value="Submit Info"
+              class="submit-button"
+            />
+            <input type="hidden" value="Watch Service" name="object" />
+            <input name="redirect" type="hidden" value="/thanks.html" />
           </form>
         </div>
       </main>
