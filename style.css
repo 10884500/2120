@@ -141,6 +141,7 @@ header {
   }
 }
 
+
 /* Destinations FIGS NOT CENTERED ON PAGE DUE TO FLOAT:LEFT */
 #des-page {
   text-align: center;
@@ -158,11 +159,6 @@ figure {
   margin: 16px 40px 16px 40px;
   grid-auto-flow: row;
 }
-
-#fig-main {
-
-}
-
 .des-txt {
   text-align: center;
   color: #699cc3;
@@ -178,11 +174,39 @@ figure {
     height: 25rem;
 }
 
+/* Packages */
+#p2 {
+    background-color: #F0F0EE;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+#p1 {
+    padding: 1rem;
+    background-color: #F5F5F2;
+    margin-top: 2rem;
+}
+#p1img {
+    width: 15rem;
+    height: auto;
+    float: right;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px #23261D;
+}
+
+
+/* Contacts */
+#contact {
+    margin-top: 2rem;
+    width: 50%;
+    height: auto;
+}
+
+
 /* Footer */
 footer {
   border-radius: 10px;
-  background-color: #2cd872;
-  color: black;
+  background-color: #9dc0d6;
+  color: #23261D;
   clear: both;
 }
 
