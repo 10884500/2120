@@ -3,6 +3,11 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+p {
+    padding: 3px;
+}
+
+/* Page */
 #wrap {
     max-width: 900px;
     min-width: 300px;
@@ -12,7 +17,6 @@ html {
     border-radius: .7rem;
     box-shadow: 2px 2px 4px #bbbbbb;
     height: auto;
-    /* box-shadow: 2px 2px 4px #bbbbbb inset; */
   }
 
   main {
@@ -30,6 +34,13 @@ html {
     font-family: 'Indie Flower', cursive;
     font-size: 28px;
     height: 5rem;
+  }
+
+  #home-img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: #23261D 2px 2px 4px;
   }
 
   /*  Nav for desktop  */
@@ -132,7 +143,8 @@ html {
   /* Footer */
 footer {
     border-radius: 10px;
-    background-color: #2C7272;
+    background-color: #2CD872;
+    color: black;
 }
 
 #foot-cont {
@@ -140,5 +152,5 @@ footer {
 }
 
 #totop {
-    
+    color: white;
 }
