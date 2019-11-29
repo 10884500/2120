@@ -1,192 +1,196 @@
 /* General */
 html {
-    background-color: #F0F0EE;
-    font-family: 'Montserrat', sans-serif;
+  background-color: #f0f0ee;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
-    padding: 3px;
+  padding: 3px;
 }
-
 
 /* Page */
 #wrap {
-    max-width: 900px;
-    min-width: 300px;
-    margin: 0 auto;
+  max-width: 900px;
+  min-width: 300px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  box-shadow: 2px 2px 4px #bbbbbb;
+  height: auto;
+}
+
+main {
+  padding: 0.5rem 2%;
+  display: block;
+  margin: 0;
+}
+
+header {
+  text-align: left;
+  background-image: url(images/tree-head.svg);
+  background-repeat: no-repeat;
+  background-position: 75% 25%;
+  background-size: 50px;
+  font-family: "Indie Flower", cursive;
+  font-size: 28px;
+  height: 5rem;
+}
+
+#home-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: #23261d 2px 2px 4px;
+}
+
+/*  Nav for desktop  */
+@media only screen and (min-width: 801px) {
+  nav {
+    margin-left: 25%;
+    align-items: center;
+    font-family: "Montserrat", bold;
+  }
+  nav li:hover {
+    background-color: #699cc3;
+    color: #2cd872;
+  }
+  .active {
+    float: left;
+    padding: 20px 20px 0px 15px;
+    list-style: none;
     background-color: white;
-    padding: 1rem ;
-    border-radius: .7rem;
-    box-shadow: 2px 2px 4px #bbbbbb;
-    height: auto;
+    padding-top: 3px;
+    border: solid #2c7272 1px;
   }
-
-  main {
-    padding: 0.5rem 2%;
-    display: block;
-    margin: 0;
+  .noa {
+    float: left;
+    padding: 20px 20px 0px 15px;
+    list-style: none;
+    background-color: #9dc0d6;
+    padding-top: 3px;
+    border: solid #2c7272 1px;
   }
-
-  header {
-    text-align: left;
-    background-image: url(images/tree-head.svg);
-    background-repeat: no-repeat;
-    background-position: 75% 25%;
-    background-size: 50px;
-    font-family: 'Indie Flower', cursive;
-    font-size: 28px;
-    height: 5rem;
+  a {
+    text-decoration: none;
   }
-
-  #home-img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-      box-shadow: #23261D 2px 2px 4px;
+  a:link {
+    color: #2c7272;
   }
-
-
-  /*  Nav for desktop  */
-  @media only screen and (min-width: 801px) {
-    nav {
-      margin-left: 25%;
-      align-items: center;
-      font-family: 'Montserrat', bold;
-    }
-    nav li:hover {
-        background-color: #699CC3;
-        color: #2CD872;
-    }
-    .active {
-      float: left;
-      padding: 20px 20px 0px 15px;
-      list-style: none;
-      background-color: white;
-      padding-top: 3px;
-      border: solid #2C7272 1px;
-    }
-    .noa {
-      float: left;
-      padding: 20px 20px 0px 15px;
-      list-style: none;
-      background-color: #9DC0D6;
-      padding-top: 3px;
-      border: solid #2C7272 1px;
-    }
-    a {
-      text-decoration: none;
-    }
-    a:link {
-      color: #2C7272;
-    }
-    a:visited {
-      color: #2C7272;
-    }
-    a:active {
-      color: #699CC3;
-    }
-    nav {
-      text-align: center;
-      padding-bottom: 10px;
-      display: block;
-      margin-left: 0;
-    }
+  a:visited {
+    color: #2c7272;
   }
-
-
-  /* phone */
-@media only screen and (max-width: 800px) {
-    nav {
-     align-items: center;
-     font-family: 'Montserrat', bold;
-    }
-    ul.navbar {
-      background-color: #F0F0EE;
-      list-style: none;
-      padding: .5rem 2%;
-      border-radius: 1rem;
-      text-align: center;
-    }
-    ul.navbar li {
-        padding: .1rem;
-        margin: .1rem;
-    }
-    ul.navbar li a {
-      border: solid 1px #cf3233;
-      display: block;
-      padding: .5rem 2%;
-      border-radius: .7rem;
-      margin: .5rem;
-      color: #f7f3f8;
-      text-decoration: none;
-    }
-    li.active {
-      font-size: 2rem;
-      background-color: #23261D;
-      border-radius: 25px;
-    }
-    a {
-      text-decoration: none;
-    }
-    a:link {
-      color: #9DC0D6;
-    }
-    a:visited {
-      color: #9DC0D6;
-    }
-    nav li:hover {
-        background-color: #699CC3;
-        color: #2CD872;
-        border-radius: 25px;
-    }
-    a:active {
-      color: #699CC3;
-    }
+  a:active {
+    color: #699cc3;
   }
-
-
-  /* Destinations */
-#des-page {
+  nav {
     text-align: center;
-    margin-top: .75rem;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: 0;
+  }
+}
+
+/* phone */
+@media only screen and (max-width: 800px) {
+  nav {
+    align-items: center;
+    font-family: "Montserrat", bold;
+  }
+  ul.navbar {
+    background-color: #f0f0ee;
+    list-style: none;
+    padding: 0.5rem 2%;
+    border-radius: 1rem;
+    text-align: center;
+  }
+  ul.navbar li {
+    padding: 0.1rem;
+    margin: 0.1rem;
+  }
+  ul.navbar li a {
+    border: solid 1px #cf3233;
+    display: block;
+    padding: 0.5rem 2%;
+    border-radius: 0.7rem;
+    margin: 0.5rem;
+    color: #f7f3f8;
+    text-decoration: none;
+  }
+  li.active {
+    font-size: 2rem;
+    background-color: #23261d;
+    border-radius: 25px;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:link {
+    color: #9dc0d6;
+  }
+  a:visited {
+    color: #9dc0d6;
+  }
+  nav li:hover {
+    background-color: #699cc3;
+    color: #2cd872;
+    border-radius: 25px;
+  }
+  a:active {
+    color: #699cc3;
+  }
+}
+
+/* Destinations FIGS NOT CENTERED ON PAGE DUE TO FLOAT:LEFT */
+#des-page {
+  text-align: center;
+  margin-top: 0.75rem;
 }
 
 figure {
-    display: grid;
-    border: 2px solid #120d0f;
-    float: left;
-    width: 150px;
-    height: 400px;
-    padding: 2px;
-    background-color: white;
-    margin: 16px 40px 16px 40px;
-    grid-auto-flow: row;
-  }
+  display: grid;
+  border: 2px solid #120d0f;
+  float: left;
+  width: 150px;
+  height: 400px;
+  padding: 2px;
+  background-color: white;
+  margin: 16px 40px 16px 40px;
+  grid-auto-flow: row;
+}
 
 #fig-main {
-    justify-content: center;
-    align-items: center;
+
 }
 
 .des-txt {
-    text-align: center;
-    color: #699CC3;
+  text-align: center;
+  color: #699cc3;
 }
 
+/* Video */
+#vid-txt {
+    text-align: center;
+}
+.video {
+    margin-top: 2rem;
+    width: 100%;
+    height: 25rem;
+}
 
-  /* Footer */
+/* Footer */
 footer {
-    border-radius: 10px;
-    background-color: #2CD872;
-    color: black;
-    clear: both;
+  border-radius: 10px;
+  background-color: #2cd872;
+  color: black;
+  clear: both;
 }
 
 #foot-cont {
-    margin: .75rem;
-    text-align: center;
+  margin: 0.75rem;
+  text-align: center;
 }
 
 #totop {
-    color: white;
+  color: white;
 }
