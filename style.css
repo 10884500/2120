@@ -1,3 +1,4 @@
+/* General */
 html {
     background-color: #F0F0EE;
     font-family: 'Montserrat', sans-serif;
@@ -6,6 +7,7 @@ html {
 p {
     padding: 3px;
 }
+
 
 /* Page */
 #wrap {
@@ -42,6 +44,7 @@ p {
       border-radius: 5px;
       box-shadow: #23261D 2px 2px 4px;
   }
+
 
   /*  Nav for desktop  */
   @media only screen and (min-width: 801px) {
@@ -89,6 +92,7 @@ p {
       margin-left: 0;
     }
   }
+
 
   /* phone */
 @media only screen and (max-width: 800px) {
@@ -140,15 +144,47 @@ p {
     }
   }
 
+
+  /* Destinations */
+#des-page {
+    text-align: center;
+    margin-top: .75rem;
+}
+
+figure {
+    display: grid;
+    border: 2px solid #120d0f;
+    float: left;
+    width: 150px;
+    height: 400px;
+    padding: 2px;
+    background-color: white;
+    margin: 16px 40px 16px 40px;
+    grid-auto-flow: row;
+  }
+
+#fig-main {
+    justify-content: center;
+    align-items: center;
+}
+
+.des-txt {
+    text-align: center;
+    color: #699CC3;
+}
+
+
   /* Footer */
 footer {
     border-radius: 10px;
     background-color: #2CD872;
     color: black;
+    clear: both;
 }
 
 #foot-cont {
     margin: .75rem;
+    text-align: center;
 }
 
 #totop {
