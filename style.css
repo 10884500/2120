@@ -104,24 +104,26 @@ header {
     padding: 0.5rem 2%;
     border-radius: 1rem;
     text-align: center;
+    font-size: 1.5rem;
   }
   ul.navbar li {
     padding: 0.1rem;
     margin: 0.1rem;
   }
   ul.navbar li a {
-    border: solid 1px #cf3233;
     display: block;
     padding: 0.5rem 2%;
     border-radius: 0.7rem;
     margin: 0.5rem;
-    color: #f7f3f8;
+    color: #9dc0d6;
     text-decoration: none;
   }
   li.active {
     font-size: 2rem;
-    background-color: #23261d;
+    background-color: #699cc3;
     border-radius: 25px;
+    font-size: 2rem;
+    
   }
   a {
     text-decoration: none;
@@ -133,8 +135,7 @@ header {
     color: #9dc0d6;
   }
   nav li:hover {
-    background-color: #699cc3;
-    color: #2cd872;
+    background-color: #e5ebee;
     border-radius: 25px;
   }
   a:active {
