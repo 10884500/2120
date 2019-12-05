@@ -151,10 +151,10 @@ header {
   font-size: 2rem;
 }
 #fig-main {
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-  justify-content: space-evenly;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, 100%);
+  justify-content: center;
 }
 figure {
   border: 2px solid #120d0f;
